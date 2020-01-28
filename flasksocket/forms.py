@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField , PasswordField , TextAreaField , SubmitField
 from wtforms.validators import InputRequired, EqualTo , ValidationError
-from models import User
+from flasksocket.models import User
 from flasksocket import bcrypt
 
 def data_check(form, field):
