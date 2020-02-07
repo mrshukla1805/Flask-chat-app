@@ -6,7 +6,7 @@ from flask_socketio import SocketIO
 
 app = Flask(__name__)
 bcrypt = Bcrypt(app)
-app.secret_key = "secret"
+app.secret_key = ""
 
 app.config['SQLALCHEMY_DATABASE_URI']= ''
 db = SQLAlchemy(app)
